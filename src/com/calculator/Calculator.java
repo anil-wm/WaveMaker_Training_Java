@@ -10,10 +10,10 @@ public class Calculator {
         String number1 ;
         String number2 ;
 
-//    BigInteger bigInteger = new BigInteger();
+
 
         Scanner scanner = new Scanner(System.in);
-//        boolean performOperation = true;
+
         while(true){
             displayMenu();
             int choice = scanner.nextInt();

@@ -7,7 +7,7 @@ public class NumberGuessingGame {
 
     public void guessNumber(){
         Scanner scanner = new Scanner(System.in);
-//        int userInput = 0;
+
         Random random = new Random();
         int randomNumber = random.nextInt(1000);
 
