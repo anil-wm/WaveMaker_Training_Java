@@ -7,13 +7,10 @@ public class Calculator {
 
     public void calculate(){
 
-        String number1 ;
-        String number2 ;
-
-
+        String number1 = null;
+        String number2 = null;
 
         Scanner scanner = new Scanner(System.in);
-
         while(true){
             displayMenu();
             int choice = scanner.nextInt();
@@ -30,20 +27,14 @@ public class Calculator {
             number2 = scanner.next();
             BigInteger num2 = new BigInteger(number2);
 
-//            BigInteger result = new BigInteger("0");
-
             switch (choice){
                 case 1 -> {
-//                    result = num1.add(num2);
                     System.out.println("Result : "+num1.add(num2));
-
                 }
                 case 2 ->{
-//                    result = num1.subtract(num2);
                     System.out.println("Result : "+num1.subtract(num2));
                 }
                 case 3 -> {
-//                    result = num1.multiply(num2);
                     System.out.println("Result : "+num1.multiply(num2));
                 }
                 case 4 ->{
@@ -51,14 +42,12 @@ public class Calculator {
                         System.out.println("Cannot divide by zero");
                     }
                     else {
-//                        result = num1.divide(num2);
                         System.out.println("Result : "+num1.divide(num2));
                     }
                 }
                 default -> {
                     System.out.println("Pick an option from ( 1 - 4 )");
                 }
-
             }
         }
         scanner.close();
